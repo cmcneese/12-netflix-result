@@ -1,4 +1,4 @@
-class NetflixView {
+export default class NetflixView {
   constructor(el, model) {
     this.el = el;
     this.model = model;
@@ -7,15 +7,15 @@ class NetflixView {
     const showTitle = this.el.querySelector('.show-title');
     showTitle.innerText = this.model.show_title;
     const showCategory = this.el.querySelector('.show-genre');
-    showTitle.innerText = this.model.show_title;
+    showCategory.innerText = this.model.category;
     const showRating = this.el.querySelector('.show-rating');
-    showTitle.innerText = this.model.show_title;
+    showRating.innerText = this.model.rating;
     const moviePic = this.el.querySelector('.movie-pic');
-    showTitle.innerText = this.model.show_title;
+    moviePic.src = this.model.poster;
     const movieSummar = this.el.querySelector('.description');
-    showTitle.innerText = this.model.show_title;
+    movieSummar.innerText = this.model.summary;
     const movieStarring = this.el.querySelector('.starring');
-    showTitle.innerText = this.model.show_title;
+    movieStarring.innerText = this.model.show_cast;
 
 
     // this.el.queryQuerySelctor('.rating')
